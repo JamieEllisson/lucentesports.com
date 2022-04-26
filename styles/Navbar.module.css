@@ -214,6 +214,10 @@
         padding-inline: 4rem;
         max-width: 72rem;
     }
+
+    .menu{
+        display: none;
+    }
 }
 
 @media screen and (min-width:80rem) {
