@@ -35,9 +35,9 @@ function Home({ articles }:Props) {
               </div>          
               <div>
                 {featured.map(post=>(
-                  <Link key={post._id} href={`news/${post.slug.current}`}>
+                  <Link key={post._id} href={`news/${post.slug.current}`} passHref>
                     <div>
-                      <img className='news_image' src={urlFor(post.mainImage).url()!}/>
+                      <img className='news_image' src={urlFor(post.mainImage).url()!} alt=''/>
                       <div className='featured_details'>
                         <h2>{post.title}</h2>
                         <div>
@@ -57,9 +57,9 @@ function Home({ articles }:Props) {
               </div>
               <div className='grid'>
                 {latest.map(post=>(
-                    <Link key={post._id} href={`news/${post.slug.current}`}>
+                    <Link key={post._id} href={`news/${post.slug.current}`} passHref>
                       <div>
-                        <img className='news_image' src={urlFor(post.mainImage).url()!}/>
+                        <img className='news_image' src={urlFor(post.mainImage).url()!} alt=''/>
                         <div className='latest_details'>
                           <h2>{post.title}</h2>
                           <h4>{new Date(post._createdAt).toLocaleDateString("en-US",{month: 'long',day: 'numeric',year: 'numeric'})}<span>{post.categories[0].title}</span></h4>
@@ -80,9 +80,9 @@ function Home({ articles }:Props) {
                 <h3>Our Teams</h3>
               </div>
               <div className='our_teams_container'>
-                <img src='/img/leagueoflegends.webp'/>
-                <img src='/img/csgo.webp'/>
-                <img src='/img/fifa.webp'/>
+                <img src='/img/leagueoflegends.webp' alt=''/>
+                <img src='/img/csgo.webp' alt=''/>
+                <img src='/img/fifa.webp' alt=''/>
               </div>
             </section>
             <section className='content_container'>
@@ -90,7 +90,7 @@ function Home({ articles }:Props) {
                 <div className='pill'></div>
                 <h3>Content, Anytime, Anywhere</h3>            
               </div>
-              <p>We strive to provide high-quality, informative, and educational content. We want to show our journey as an organisation to you, the viewer. Whether this is through our Lucent Lundi's, our player communication videos, or through our podcasts!</p>
+              <p>We strive to provide high-quality, informative, and educational content. We want to show our journey as an organisation to you, the viewer. Whether this is through our Lucent Lundi&apos;s, our player communication videos, or through our podcasts!</p>
               <button className='see_more'>Content</button>
             </section> 
           </div>
