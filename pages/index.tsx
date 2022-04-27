@@ -19,8 +19,7 @@ function Home({ articles }:Props) {
   return (
     <>
       <Head>
-        <title>Lucent Esports</title>      
-        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <title>Lucent Esports</title>             
       </Head>
        
       <Navbar/>
@@ -36,7 +35,7 @@ function Home({ articles }:Props) {
               <div>
                 {featured.map(post=>(
                   <Link key={post._id} href={`news/${post.slug.current}`} passHref>
-                    <div>
+                    <div className='featured_news'>
                       <img className='news_image' src={urlFor(post.mainImage).url()!} alt=''/>
                       <div className='featured_details'>
                         <h2>{post.title}</h2>
@@ -58,7 +57,7 @@ function Home({ articles }:Props) {
               <div className='grid'>
                 {latest.map(post=>(
                     <Link key={post._id} href={`news/${post.slug.current}`} passHref>
-                      <div>
+                      <div className='latest_news'>
                         <img className='news_image' src={urlFor(post.mainImage).url()!} alt=''/>
                         <div className='latest_details'>
                           <h2>{post.title}</h2>

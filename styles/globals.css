@@ -75,6 +75,10 @@ main{
   margin-inline: auto;
 }
 
+.featured_news,.latest_news{
+  cursor: pointer;
+}
+
 .news_image{
   width: 100%;
   object-fit: cover;
@@ -95,7 +99,7 @@ main{
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem 4rem;
+  gap: 2rem 3rem;
 }
 
 .pill{
