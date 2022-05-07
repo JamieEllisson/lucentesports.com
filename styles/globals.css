@@ -23,8 +23,8 @@
   --clr-white: hsl(0 0% 100%);
   --clr-grey: hsl(215, 10%, 45%);
   --clr-grey2: rgb(34,38,47);
-  --clr-red: hsl(0, 100%, 40%);
-
+  --clr-red: hsl(187, 100%, 50%);
+  --clr-red1: hsl(0, 100%, 40%);
   /* Other Variables */
   --page-padding: 1rem;
 }

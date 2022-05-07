@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: center;
     height: inherit;
+    width: 170px;
 }
 
 .logo{
@@ -121,6 +122,8 @@
 .right_container{
     display: flex;
     height: inherit;
+    justify-content: flex-end;
+    width: 170px;
 }
 
 .right_container h4{
