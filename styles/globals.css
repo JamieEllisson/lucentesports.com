@@ -130,7 +130,7 @@ main{
 
 /* Homepage CSS*/
 
-.index_grid{
+.index_grid{  
   display: grid;
   grid-template-columns: 1.9fr 1fr;
   grid-auto-rows: min-content;
@@ -147,7 +147,8 @@ main{
     "featured matches"
     "featured socials"
     "latest twitch"
-    "latest twitter";  
+    "latest twitter"
+    "teams .";  
   gap: 16px 80px;  
 }
 
@@ -301,3 +302,4 @@ main{
 }
 
 /* Twitter */
+
