@@ -95,16 +95,25 @@ function Home({ articles }:Props) {
           </div>
           <div className='side_content'>
             <section>
-            <div className='heading_container'>
+              <div className='heading_container'>
                 <div className='pill'></div>
                 <h3>Live Stream</h3>            
               </div>
-              <iframe
-                src="https://player.twitch.tv/?channel=lucentesports&parent=lucentesports.netlify.app&muted=true"
-                height="300"
-                width="100%"
-                allowFullScreen>
-              </iframe>
+              <div className='twitch'>
+                <iframe
+                  src="https://player.twitch.tv/?channel=lucentesports&parent=lucentesports.netlify.app&muted=true"
+                  height="100%"
+                  width="100%"
+                  allowFullScreen>
+                </iframe>
+              </div>
+            </section>
+            <section>
+              <div className='heading_container'>
+                <div className='pill'></div>
+                <h3>Socials</h3>            
+              </div>
+              
             </section>
             <section>
               <div className='heading_container'>
