@@ -30,7 +30,7 @@ function Home({ articles }:Props) {
             {featured.map(post=>(
               <Link key={post._id} href={`news/${post.slug.current}`} passHref>
                 <div className='news_link'>
-                  <Image className='news_image' src={urlFor(post.mainImage).url()!} alt='new image' layout='intrinsic' objectFit='cover' width={1920} height={1080}/>
+                  <Image className='news_image' src={urlFor(post.mainImage).url()!} alt='news image' layout='intrinsic' objectFit='cover' width={1920} height={1080}/>
                   <div className='news_details_container'>
                     <h2>{post.title}</h2>
                     <h4>{new Date(post._createdAt).toLocaleDateString("en-US",{month: 'long',day: 'numeric',year: 'numeric'})}<span className='dot'></span>{post.categories[0].title}</h4>
@@ -66,7 +66,7 @@ function Home({ articles }:Props) {
               {latest.map(post=>(
                 <Link key={post._id} href={`news/${post.slug.current}`} passHref>
                   <div className='news_link'>
-                    <Image className='news_image' src={urlFor(post.mainImage).url()!} alt='new image' layout='intrinsic' objectFit='cover' width={1920} height={1080}/>
+                    <Image className='news_image' src={urlFor(post.mainImage).url()!} alt='news image' loading='lazy' layout='intrinsic' objectFit='cover' width={1920} height={1080}/>
                     <div className='news_details_container'>
                       <h2>{post.title}</h2>
                       <h4>{new Date(post._createdAt).toLocaleDateString("en-US",{month: 'long',day: 'numeric',year: 'numeric'})}<span className='dot-small'></span>{post.categories[0].title}</h4>
