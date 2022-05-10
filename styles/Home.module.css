@@ -1,0 +1,247 @@
+.featured_news,.latest_news{
+    cursor: pointer;
+  }
+  
+  .news_image{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .heading_container{
+    display: flex;
+    padding-block: 2.5rem;
+  }
+  .heading_container h3{
+    padding-inline-start: 0.5rem;  
+    font-size: 1rem;
+    font-family: 'gotham-light';
+    text-transform: uppercase;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
+  }
+  
+  .pill{
+    content: '';
+    height: 10px;
+    width: 0.125rem;
+    border-radius: 100vw;
+    background-color: var(--clr-red);
+    color: var(--clr-red);
+  }
+  
+  
+  
+  .item a.current::before{  
+    content: '';
+    position: absolute;
+    width: 100% !important;
+    height: 3px;
+    top: -16px;
+    left: 0;
+    border-radius: 4px;
+    background: var(--clr-red);
+    opacity: 100%;     
+  }
+  
+  
+  .latest_details, .featured_details{
+    padding-block: 0.375rem;
+  }
+  
+  .featured_details div{
+    display: flex;  
+    align-items: flex-end;
+  }
+  
+  .featured_details div h4:nth-child(1){
+    padding-inline-end: 1rem;
+  }
+  
+  .featured_details h2{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .featured_details h4{
+    font-size: 0.75rem;
+    color: var(--clr-grey);
+  }
+  
+  .latest_details h2{
+    font-size: 0.85rem;
+    padding-bottom: 0.5rem;
+  }
+  .latest_details h4{
+    color: var(--clr-grey);
+    font-size: 0.5rem;
+  }
+  
+  .latest_details h4 span, .featured_details h4 span{
+    padding-inline-start: 0.5rem;
+  }
+  
+  .see_more_container{
+    padding-block-start: 1rem;
+  }
+  
+  .see_more{
+    background-color: var(--clr-grey);
+    width: 100%;
+    height: 2rem;  
+    
+  }
+  
+  .our_teams_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .our_teams_container img{  
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 50%;
+    padding-block: 0.5rem;
+  }
+  
+  .content_container p{
+    font-family: 'gotham-light';
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+  
+  .side_content{
+    display: none;
+  }
+  
+  .matches{
+    width: 100%;
+    height: 360px;
+    background-color: var(--clr-grey2);
+  }
+  
+  footer{
+    border-top: solid 1px var(--clr-grey2);
+  }
+  
+  @media screen and (min-width:48rem) {
+    main{
+      padding-inline: 3rem; 
+      max-width: 56rem;       
+    }
+  }
+  
+  @media screen and (min-width:64rem) {
+    main{
+      padding-inline: 4rem; 
+      max-width: 80rem;    
+    }
+  
+    .index_grid{
+      display: grid;
+      grid-template-columns: 1.75fr 1fr;
+      gap: 6rem;
+    }
+  
+    .side_content{
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width:80rem) {
+    main{     
+      max-width: 96rem;      
+    }
+    
+    .featured_details{
+      display: flex;
+      justify-content: space-between;    
+    }
+    .featured_details div{    
+      flex-direction: column;
+    }
+  
+    .featured_details div h4:nth-child(1){
+      padding-inline-end: 0;
+    }
+  
+    .grid{
+      gap: 4rem;
+    }
+  }
+  
+  @media screen and (min-width:96rem) {
+    main{
+      max-width: 100rem;
+    }
+    
+  }
+  
+  
+  @media screen and (min-width:104rem) {
+   
+    
+  }
+  
+  @media screen and (min-width:112rem) {
+    
+    
+  }
+  
+  .twitch{
+    aspect-ratio: 16/9;
+    width: 100%;
+    
+  }
+  
+  #twitch-player{
+    height: min-content;
+  }
+  
+  
+  .about_grid{
+    display: grid;
+    grid-template-columns: 1.9fr 1fr;
+    grid-auto-rows: min-content auto;
+    gap: 0px 96px;
+  }
+  
+  #first{
+    grid-column: 1;
+    grid-row: 1/5;
+  }
+  
+  #third{
+    grid-column: 2;
+    grid-row: 4/5;
+  }
+  
+  #fourth{
+    grid-column: 1;
+    grid-row: 5/9;
+  }
+  
+  #sixth{
+    grid-column: 2;
+    grid-row: 6/8;
+    
+  }
+  
+  .recent_matches{
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1/4;
+  }
+  
+  .rows{
+    flex-grow: 1; 
+    text-align: center;
+  }
