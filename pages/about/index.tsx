@@ -65,8 +65,8 @@ function about({ articles }:Props) {
               </div> 
             </div>    
 
-            <div>
-             <div className='fourth'>
+            
+             <div id='fourth'>
             <div className='heading_container'>
                   <div className='pill'></div>
                   <h3>Latest News</h3>
@@ -86,8 +86,8 @@ function about({ articles }:Props) {
                     ))}
                   </div>
               </div>
-             </div>
-             <div>      
+             
+             <div id='twitch-player'>      
             <div className='heading_container'>
                   <div className='pill'></div>
                   <h3>Live Stream</h3>
@@ -102,11 +102,13 @@ function about({ articles }:Props) {
                   </iframe>
                   </div>
             </div>
-            <div>
+            <div id='sixth'>
             <div className='heading_container'>
                   <div className='pill'></div>
                   <h3>Twitter Feed</h3>
               </div> 
+              <a className="twitter-timeline" data-lang="en" data-height="100%" data-theme="dark" href="https://twitter.com/Lucent_Esports?ref_src=twsrc%5Etfw">Tweets by Lucent_Esports</a> 
+              <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>           
             </div>
           </div>
         </main>
