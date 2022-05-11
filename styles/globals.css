@@ -75,7 +75,7 @@ body {
 main{
   padding-block: 1rem;
   margin-inline: auto;
-  max-width: 100rem;  
+  max-width: 96rem;  
   min-height: 80vh;
 }
 
@@ -356,7 +356,7 @@ main{
 .socials_container{
   display: inline-block;  
   width: 100%;
-  height: calc(100% - 81px);
+  height: calc(100% - 77px);
   background-color: var(--clr-grey3);
 }
 

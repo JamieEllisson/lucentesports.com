@@ -232,7 +232,7 @@
 
 @media screen and (min-width:96rem) {
     .navbar{
-        max-width: 92rem;
+        max-width: 88rem;
         height: 4rem;
     }
 }
