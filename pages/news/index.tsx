@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 function news() {
@@ -10,6 +11,12 @@ function news() {
         </Head>
 
         <Navbar/>
+
+        <main>
+
+        </main>
+
+        <Footer/>
     </>
   )
 }

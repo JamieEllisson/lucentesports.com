@@ -92,9 +92,19 @@ function Home({ articles }:Props) {
           </section>
           <section id='twitter'>
             <div id='social_heading' className='heading_container'><div className='pill'></div><h3>Twitter Feed</h3></div>
-            <div className='twitter_container'>              
-              <a id='large-feed' className="twitter-timeline" data-theme="dark" data-height='710' href="https://twitter.com/Lucent_Esports?ref_src=twsrc%5Etfw">Tweets by Lucent_Esports</a> 
-              <script async defer src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+            <div className='twitter_container'> 
+              <div className='large-feed'>             
+                <a className="twitter-timeline" data-theme="dark" data-height='710' href="https://twitter.com/Lucent_Esports?ref_src=twsrc%5Etfw">Tweets by Lucent_Esports</a> 
+                <script async defer src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>   
+              </div> 
+              <div className='medium-feed'>             
+                <a className="twitter-timeline" data-theme="dark" data-height='810' href="https://twitter.com/Lucent_Esports?ref_src=twsrc%5Etfw">Tweets by Lucent_Esports</a> 
+                <script async defer src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>   
+              </div>   
+              <div className='small-feed'>             
+                <a className="twitter-timeline" data-theme="dark" data-height='910' href="https://twitter.com/Lucent_Esports?ref_src=twsrc%5Etfw">Tweets by Lucent_Esports</a> 
+                <script async defer src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>   
+              </div>       
             </div>
           </section>
           <section id='teams'>

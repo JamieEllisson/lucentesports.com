@@ -20,7 +20,9 @@ function about({ articles }:Props) {
 
         <Navbar/>
 
-        
+        <main>
+          
+        </main>
 
         <Footer/>
     </>

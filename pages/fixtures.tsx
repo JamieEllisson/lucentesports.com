@@ -7,14 +7,14 @@ function fixtures() {
   return (
     <>
     <Head>
-        <title>Lucent Esports | Fixtures</title>
+      <title>Lucent Esports | Fixtures</title>
     </Head>
 
     <Navbar/>
 
-    <main className="coming_soon">
+      <main className="coming_soon">
         <h1>COMING SOON</h1>
-    </main>
+      </main>
 
     <Footer/>
     </>

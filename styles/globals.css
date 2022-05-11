@@ -73,17 +73,10 @@ body {
 }
 
 main{
-  padding: 1rem;
+  padding-block: 1rem;
   margin-inline: auto;
-  max-width: 100rem;
-  padding-inline: 1rem;
+  max-width: 100rem;  
   min-height: 80vh;
-}
-
-@media screen and (min-width:40rem) {
-  .main{
-    padding-inline: 4rem;
-  }
 }
 
 /* Custom Classes */
@@ -119,8 +112,8 @@ main{
 }
 
 .dot{
-  height: 0.7rem;
-  width: 0.7rem;
+  height: 0.5rem;
+  width: 0.5rem;
   background-color: var(--clr-grey);
   border-radius: 50%;
   display: inline-block;
@@ -145,7 +138,13 @@ main{
   border: solid 1px hsl(0 100% 40% /0.25);
 }
 
-@media screen and (min-width:40rem) {
+@media screen and (min-width:49rem) {
+  .heading_container{    
+    padding-block: 1.5rem;
+  }
+}
+
+@media screen and (min-width:80rem) {
   .heading_container{    
     padding-block: 2.5rem;
   }
@@ -171,6 +170,7 @@ main{
     "teams"
     "twitter";  
   gap: 16px 80px;  
+  padding-inline: 1rem;
 }
 
 #featured{
@@ -198,11 +198,9 @@ main{
   grid-area: twitter;
 }
 
-@media screen and (min-width:40rem) {
-  .index_grid{  
-    display: grid;
-    grid-template-columns: 1.9fr 1fr;
-    grid-auto-rows: min-content;
+@media screen and (min-width:48.01rem)  {
+  .index_grid{     
+    grid-template-columns: 1.9fr 1fr;    
     grid-template-areas: 
       "featured matches"
       "featured matches"
@@ -214,17 +212,42 @@ main{
       "featured matches"
       "featured matches"
       "featured matches"
-      "featured socials"
-      "latest twitch"
+      "featured socials"      
       "latest twitter"
       "teams .";  
-    gap: 16px 80px;  
+    gap: 16px 48px;  
+    padding-inline: 2rem;
   }
+  
+}
+
+@media screen and (min-width:80rem) {
+  .index_grid{  
+    grid-template-areas: 
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured matches"
+      "featured socials" 
+      "latest twitch"     
+      "latest twitter"
+      "teams .";          
+    gap: 16px 80px;  
+    padding-inline: 4rem;    
+  }  
 
   #twitch{
     display: block;
   }
 }
+
+/* Featured News */
 
 .news_link{
   cursor: pointer;
@@ -244,12 +267,22 @@ main{
   color: var(--clr-grey);
 } 
 
-.news_link:hover{
-  transform: scale(1.05);
-  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+@media screen and (min-width:49rem) {
+
+  .news_details_container h2{      
+    padding-block-start: 1.25rem;
+    font-size: 1.8rem;    
+  }
+  
+  .news_details_container h4{      
+    padding-block-start: 0.75rem;
+    font-size: 0.9rem;    
+  }    
 }
 
-@media screen and (min-width:40rem) {
+
+
+@media screen and (min-width:80rem) {
   
   .news_details_container h2{      
     padding-block-start: 1.25rem;
@@ -281,6 +314,37 @@ main{
 
 .match:last-child{
   border-bottom: solid 1px var(--clr-grey2); 
+}
+
+@media screen and (min-width:49rem) {
+  .matches_container{
+    grid-template-rows: repeat(3,1fr);  
+    height: calc(100% - 61px);
+  }
+
+  .match:nth-child(3){
+    border-bottom: solid 1px var(--clr-grey2);
+  }
+
+  .match:last-child{
+    display: none;
+  }
+}
+
+@media screen and (min-width:80rem) {
+  .matches_container{
+    grid-template-rows: repeat(4,1fr);  
+    height: calc(100% - 97px);
+  }
+
+  .match:last-child{
+    display: flex;
+    border-bottom: solid 1px var(--clr-grey2); 
+  }
+
+  .match:nth-child(3){
+    border-top: solid 1px var(--clr-grey2); 
+  }   
 }
 
 /* Socials */
@@ -343,9 +407,41 @@ main{
   fill: var(--clr-white);
 }
 
-@media screen and (min-width:40rem) {
+@media screen and (min-width:48.01rem) {
+  .socials_container{         
+    height: calc(100% - 61px);    
+  }
+
+  .social_icon svg{
+    width: 32px;
+    height: 32px;
+  }
+  
+  .social_icon_discord svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width:80rem) {
   #social_heading{
     padding-block-start: 1.5rem;
+  }
+}
+
+@media screen and (min-width:80rem) {
+  .socials_container{         
+    height: calc(100% - 81px);    
+  }
+
+  .social_icon svg{
+    width: 48px;
+    height: 48px;
+  }
+  
+  .social_icon_discord svg{
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -364,7 +460,7 @@ main{
 
 .latest_grid h4{
   padding-block-start: 0.4rem;
-  font-size: 0.25rem;
+  font-size: 0.3rem;
 }
 
 .more_news_container{ 
@@ -376,10 +472,25 @@ main{
   width: 50%;
 }
 
-@media screen and (min-width: 40rem) {
-    .latest_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 48.01rem) {
+  .latest_grid{    
+  gap: 32px 48px;
+}
+
+.latest_grid h2{
+  padding-block-start: 1rem;
+  font-size: 1rem;
+}
+
+.latest_grid h4{
+  padding-block-start: 0.5rem;
+  font-size: 0.75rem;
+}
+
+}
+
+@media screen and (min-width: 80rem) {
+    .latest_grid{    
     gap: 48px 64px;
   }
 
@@ -404,3 +515,53 @@ main{
 
 /* Twitter */
 
+.large-feed{
+  display: block;
+}
+
+.medium-feed{
+  display: none;
+}
+
+.small-feed{
+  display: none;
+}
+
+@media screen and (min-width:48.01rem) {  
+  .large-feed{
+    display: none;
+  }
+
+  .medium-feed{
+    display: block;
+  }
+}
+
+@media screen and (min-width:63rem) {
+  .small-feed{
+    display: block;
+  }
+
+  .medium-feed{
+    display: none;
+  }
+
+  .large-feed{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width:80rem) {
+  .large-feed{
+    display: block;
+  }
+
+  .medium-feed{
+    display: none;
+  }
+
+  .small-feed{
+    display: none;
+  }
+}
